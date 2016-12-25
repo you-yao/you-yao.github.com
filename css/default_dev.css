@@ -72,6 +72,7 @@ header {
 #code {
     width: 100%;
     color: #333;
+    min-height: 400px;
     font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
     font-size: 12px;
 }
