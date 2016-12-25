@@ -18,7 +18,6 @@ input, textarea, select {margin:0; padding:0px;}
 /* ------------------------------------Html-Body------------------------------- */
 /* ---------------------------------------------------------------------------- */
 html, body {width:100%; padding:0; margin:0;}
-body {background: #DDD7C7 url("../images/bg.jpg") repeat;color: #4D4D4D;font: 14px/25px Arial, Helvetica, sans-serif;}
 body .wrap-body{}
 
 a{color: #4C4C4C;text-decoration: none;}

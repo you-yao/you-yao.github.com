@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: #FFFFEE;
+	background: #fff;
 	font-size: 12px;
 }
 
@@ -50,7 +50,8 @@ body {
 #loveu{
 	padding: 5px;
 	font-size: 12px;
-	    margin-top: 10px;    margin-right: 62px;
+	margin-top: 10px; 
+	margin-right: 62px;
 	text-align: right;
 	display: none;
 }
@@ -111,4 +112,16 @@ body {
 
 #copyright a{
 	color:#666;
+}
+
+@keyframes mysnow {
+	0% { bottom: 100%; opacity: 0; }
+	50% { opacity: 1; transform: rotate(720deg);}
+	100% { transform: rotate(0deg); opacity: 0; bottom: 0%;}
+}
+.snow-container { position: fixed; z-index: 8888;}
+.pic { z-index: 8888;position: absolute; opacity: 0; animation: mysnow 5s;height: 30px; display: inline-block;
+    height: 20px;
+    width: 20px;
+    max-width: 20px;
 }
