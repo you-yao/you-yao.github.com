@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>Our Love Story</title>
+	<title>我们，尤宝叔宝</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<style type="text/css">
@@ -16,10 +16,27 @@
 	<link rel="stylesheet" href="./css/responsive.css">
 	<link rel="stylesheet" href="./css/zerogrid.css">
 	<link rel="stylesheet" href="./css/component.css">
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden_dev.js"></script>
+    <script type="text/javascript" src="js/functions_dev.js"></script>
 </head>
 
 <body>
 	<div id="snowFlow" > </div>
+
+		<div class="wrap-body">
+<!--Header-->
+<header>
+	<div class="wrap-header">
+		<div class="zerogrid">
+			<div id="logo">
+			<h3 style="color:#57A8C1;margin-bottom:10px;">欢迎来到尤艺汀和姚广胤的小站</h3>
+			<p>对曾经的我们，这是未来，对现在的我们，这是回忆，对未来的我们，这是永恒。</p>
+			</div>
+		</div>
+	</div>
+</header>
 	<div id="mainDiv">
 		<div id="content">
 			<div id="loveHeart">
@@ -36,34 +53,28 @@
 				</div>
 			</div>
 			<div id="code">
-				<p class="space">尤宝，圣诞节快乐</p>
-				<p class="space">没在你身边，所以写了代码来和你一起庆祝今年的圣诞节</p>
-				<p class="space">共同在玉环成长，共同在玉城学习</p>
-				<p class="space">直到今年的七月二号，遇见了你，这是我最开心的一天</p>
-				<p class="space">一直喜欢七这个数字，现在它给我带来了好运，哈哈</p>
-				<p class="space">对于二，我能想到最浪漫的事就是跟你二在一起</p>
-				<p class="space">哈哈哈哈哈哈哈哈哈哈</p>
-				<p class="space">刚开始我们认识那时候真的好开心</p>
-				<p class="space">我觉得我是世界上最幸福的人，因为我捡到尤宝了</p>
-				<p class="space">没在你身边，所以写了代码来和你一起庆祝圣诞节</p>
+				<p class="space">尤宝，圣诞节快乐。</p>
+				<p class="space">没在你身边，所以写了代码来和你一起庆祝今年的圣诞节。</p>
+				<p class="space">共同在玉环成长，共同在玉城学习。</p>
+				<p class="space">直到今年的七月二号，遇见了你，这是我最开心的一天。</p>
+				<p class="space">一直喜欢七这个数字，现在它给我带来了好运，哈哈。</p>
+				<p class="space">对于二，我能想到最浪漫的事就是跟你二在一起。</p>
+				<p class="space">哈哈哈哈哈哈哈哈哈哈，能认识你真的好开心。</p>
+				<p class="space">我觉得我是世界上最幸福的人，因为我捡到尤宝了。</p>
+				<p class="space">后来种种原因，我们起了摩擦。</p>
+				<p class="space">可能因为前面恋爱经验的误导，以为那样做才是爱你。</p>
+				<p class="space">做了挺多傻逼的事，美其名曰以爱之名。</p>
+				<p class="space">后来慢慢懂得了，这样给你带来太多痛苦。</p>
+				<p class="space">我应该以你喜欢的样子来爱你。</p>
+				<p class="space">尽管我一大段时间表现不好，你一直陪伴在我身边。</p>
+				<p class="space">谢谢你，太多的谢谢，我爱你，很爱你，永远爱你。</p>
+				<p class="space">下面是我们过去的一些点滴。</p>
 			</div>
 		</div>
 	</div>
 
 
-	<div class="wrap-body">
-<!--Header-->
-<header>
-	<div class="wrap-header">
-		<div class="zerogrid">
-			<div id="logo">
-			<img src="./photo/生日.jpg" style="width:300px;margin-bottom:40px;">
-			<h3 style="color:#57A8C1;margin-bottom:10px;">欢迎来到尤艺汀和姚广胤的小站</h3>
-			<p>对曾经的我们，这是未来，对现在的我们，这是回忆，对未来的我们，这是永恒。</p>
-			</div>
-		</div>
-	</div>
-</header>
+
 <!--Content-->
 <section class="container">
 	<div class="zerogrid">
@@ -598,9 +609,6 @@
 
 </div>
 
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/garden_dev.js"></script>
-    <script type="text/javascript" src="js/functions_dev.js"></script>
 
     <script type="text/javascript">
 		var offsetX = $("#loveHeart").width() ;
@@ -647,14 +655,16 @@
 			}
 			setTimeout(function () {
 				startHeartAnimation();
-			}, 5000);
+			}, 8000);
 
 			timeElapse(together);
 			setInterval(function () {
 				timeElapse(together);
 			}, 500);
 
-			$("#code").typewriter();
+			setTimeout(function () {
+				$("#code").typewriter();
+			}, 5000);
 		}
 	</script>
 <script type="text/javascript" src="js/navigation.js"></script>
