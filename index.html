@@ -74,7 +74,7 @@
 	</div>
 
 
-<audio id="myaudio" src="./Nuit_Silencieuse.mp3"  preload="auto"   loop="loop" autoplay="autoplay" >
+<audio id="Jaudio" class="media-audio" src="./Nuit_Silencieuse.mp3" preload loop="loop"></audio >
     </audio>
 <!--Content-->
 <section class="container">
@@ -673,16 +673,22 @@
 
 
 
-wx.config({
-    // 配置信息
-});
-wx.ready(function () {
-var media = document.getElementById("myaudio");
-if (!media.src) {
-    media.src = "http://a.f265.com/project/shake-money/img/shake.mp3"
+function audioAutoPlay(id){
+    var audio = document.getElementById(id),
+        play = function(){
+        audio.play();
+        document.removeEventListener("touchstart",play, false);
+    };
+    audio.play();
+    document.addEventListener("WeixinJSBridgeReady", function () {//微信
+       play();
+    }, false);
+    document.addEventListener('YixinJSBridgeReady', function() {//易信
+              play();
+        }, false);
+    document.addEventListener("touchstart",play, false);
 }
-media.play();
-});
+audioAutoPlay('Jaudio');
 
 	</script>
 <script type="text/javascript" src="js/navigation.js"></script>
