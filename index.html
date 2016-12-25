@@ -671,29 +671,14 @@
 
 
 
-function audioAutoPlay(id){
-    var audio = document.getElementById(id);
 
-    var play = function() {
-        document.removeEventListener("WeixinJSBridgeReady", play);
-        document.removeEventListener("YixinJSBridgeReady", play);
-
-        audio.play();
-        audio.pause();
-        // document.removeEventListener("touchstart", play, false);
-    };
-    
-    audio.play();
-    audio.pause();
-
-    //weixin
-    document.addEventListener("WeixinJSBridgeReady", play, false);
-    //yixin
-    document.addEventListener('YixinJSBridgeReady', play, false);
-
-    // document.addEventListener("touchstart", play, false);
-}
-audioAutoPlay('soundHandle');
+wx.config({
+    // 配置信息
+});
+wx.ready(function () {
+    media.src = "./Nuit_Silencieuse.mp3"
+    media.play();
+});
 
 	</script>
 <script type="text/javascript" src="js/navigation.js"></script>
