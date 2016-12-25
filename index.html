@@ -52,7 +52,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="code">
+			<div id="code" class="hide">
 				<p class="space">尤宝，圣诞节快乐。</p>
 				<p class="space">没在你身边，所以写了代码来和你一起庆祝今年的圣诞节。</p>
 				<p class="space">共同在玉环成长，共同在玉城学习。</p>
@@ -65,10 +65,10 @@
 				<p class="space">可能因为前面恋爱经验的误导，以为那样做才是爱你。</p>
 				<p class="space">做了挺多傻逼的事，美其名曰以爱之名。</p>
 				<p class="space">后来慢慢懂得了，这样给你带来太多痛苦。</p>
-				<p class="space">我应该以你喜欢的样子来爱你。</p>
+				<p class="space">对不起，我应该以你喜欢的样子来爱你。</p>
 				<p class="space">尽管我一大段时间表现不好，你一直陪伴在我身边。</p>
 				<p class="space">谢谢你，太多的谢谢，我爱你，很爱你，永远爱你。</p>
-				<p class="space">下面是我们过去的一些点滴。</p>
+				<p class="space">纪录了一些我们过去的点滴，尤宝请往下翻哈~~~</p>
 			</div>
 		</div>
 	</div>
@@ -663,6 +663,7 @@
 			}, 500);
 
 			setTimeout(function () {
+				$('#code').removeClass('hide');
 				$("#code").typewriter();
 			}, 5000);
 		}
