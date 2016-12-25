@@ -8,7 +8,6 @@ $(function () {
 	$loveHeart = $("#loveHeart");
 	var offsetX = $loveHeart.width() ;
 	var offsetY = $loveHeart.height() - 55;
-	console.log('13213')
     $garden = $("#garden");
     gardenCanvas = $garden[0];
 	gardenCanvas.width = $("#loveHeart").width() *2;
