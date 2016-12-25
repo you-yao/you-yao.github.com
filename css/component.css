@@ -78,7 +78,7 @@ article:after, article:before{clear: both; content: '\0020'; display: block; vis
 article .line{background: #4D4D4D; height: 5px; width: 100px; margin: 10px auto;}
 article span {color: #64A2B4;}
 article img{display: inline-block;}
-article img.full{width:100%;}
+article img.full{width:100%; height: 300px;}
 article p{margin-bottom:10px;color: #444;}
 
 article .art-header{text-align: center; margin-bottom: 0;}
@@ -112,7 +112,6 @@ article.black  p{color: #fff;}
 article.black  span {color: #CC8828;}
 article.black .art-content a.button {border: 1px solid #CC8828;}
 article.black .art-content a.button {color: #CC8828;}
-article.black .title {background: url("../images/Untitled-1.jpg") repeat-x left;}
 article.black .art-footer .meta a {color: #aea2a2;}
 
 article.single{}
@@ -129,7 +128,6 @@ article .art-related h4{font-size: 16px; text-transform: capitalize;}
 .widget {margin-bottom: 35px; text-align: center;}
 .widtget:after, .widget:before{clear: both; content: '\0020'; display: block; visibility: hidden; width: 0; height: 0;}
 
-.widget .wid-header {background: url("../images/Untitled-2.jpg") repeat-x left;}
 .widget .wid-header h4{font-size: 23px;color:#9B4800;float: left;margin: 10px 0;display: inline-block;line-height: 2em;padding: 0 27px 0 5px;background-color: #fff;}
 
 .widget .wid-content{padding:5px;}
@@ -138,7 +136,6 @@ article .art-related h4{font-size: 16px; text-transform: capitalize;}
 
 
 #sidebar .widget .wid-about {margin: -20px;}
-#sidebar .widget .wid-about{background: url("../images/about.jpg") no-repeat center; background-size: 100%;height: 120px; padding-top: 80px;}
 #sidebar .widget .wid-about a{font-size:35px;text-transform: uppercase; font-weight: bold ;color: #fff;}
 
 #sidebar .widget.wid-posts{}

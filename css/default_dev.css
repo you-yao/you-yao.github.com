@@ -1,126 +1,148 @@
 body {
-	margin: 0;
-	padding: 0;
-	background: #fff;
-	font-size: 12px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-size: 12px;
 }
 
-#mainDiv{
-	width: 100%;
-	height: 100%;
+#mainDiv {
+    width: 100%;
+    height: 100%;
 }
 
 #loveHeart {
-	width:335px;
-	height:312px;
-	position: relative;
+    width: 335px;
+    height: 312px;
+    position: relative;
     margin: 0 auto;
 }
 
 #garden {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 #elapseClock {
-	font-size: 12px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #words {
-	font-family: "sans-serif";
-	font-size: 12px;
-	color:#666;
-	position: absolute;
-	top: 80px;
+    font-family: "sans-serif";
+    font-size: 12px;
+    color: #666;
+    position: absolute;
+    top: 80px;
     left: 40px;
 }
 
-#messages{
-	position: relative;
-	display: none;
+#messages {
+    position: relative;
+    display: none;
 }
 
-#elapseClock .digit{
-	font-family: "digit";
-	font-size: 18px;
+#elapseClock .digit {
+    font-family: "digit";
+    font-size: 18px;
 }
 
-#loveu{
-	padding: 5px;
-	font-size: 12px;
-	margin-top: 10px; 
-	margin-right: 62px;
-	text-align: right;
-	display: none;
+#loveu {
+    padding: 5px;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-right: 30px;
+    text-align: right;
+    display: none;
 }
 
-#loveu .signature{
-	font-size: 10px;
-	font-style: italic;
+#loveu .signature {
+    font-size: 10px;
+    font-style: italic;
 }
 
-#clickSound{
-	display:none;
+#clickSound {
+    display: none;
 }
 
 #code {
-	width: 100%;
-	height: 400px;
-	color: #333;
-	font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
-	font-size: 12px;
+    width: 100%;
+    height: 400px;
+    color: #333;
+    font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
+    font-size: 12px;
 }
 
-#code .string{
-	color: #2a36ff;
+#code .string {
+    color: #2a36ff;
 }
 
-#code .keyword{
-	color: #7f0055;
-	font-weight:bold;
+#code .keyword {
+    color: #7f0055;
+    font-weight: bold;
 }
 
-#code .placeholder{
-	margin-left:15px;
+#code .placeholder {
+    margin-left: 15px;
 }
 
-#code .space{
-	margin-left:7px;
+#code .space {
+    margin-left: 7px;
+    margin-bottom: 8px;
 }
 
-#code .comments{
-	color: #3f7f5f;
+#code .comments {
+    color: #3f7f5f;
 }
 
-#copyright{
-	margin-top: 10px;
-	text-align: center;
-	width:100%;
-	color:#666;
+#copyright {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    color: #666;
 }
 
-#errorMsg{
-	width: 100%;
-	text-align: center;
-	font-size: 11px;
-	position: absolute;
-	top: 100px;
-	left:0px;
+#errorMsg {
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    position: absolute;
+    top: 100px;
+    left: 0px;
 }
 
-#copyright a{
-	color:#666;
+#copyright a {
+    color: #666;
 }
 
 @keyframes mysnow {
-	0% { bottom: 100%; opacity: 0; }
-	50% { opacity: 1; transform: rotate(720deg);}
-	100% { transform: rotate(0deg); opacity: 0; bottom: 0%;}
+    0% {
+        bottom: 100%;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: rotate(720deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        opacity: 0;
+        bottom: 0%;
+    }
 }
-.snow-container { position: fixed; z-index: 8888;}
-.pic { z-index: 8888;position: absolute; opacity: 0; animation: mysnow 5s;height: 30px; display: inline-block;
+
+.snow-container {
+    position: fixed;
+    z-index: 8888;
+}
+
+.pic {
+    z-index: 8888;
+    position: absolute;
+    opacity: 0;
+    animation: mysnow 5s;
+    height: 30px;
+    display: inline-block;
     height: 20px;
     width: 20px;
     max-width: 20px;
